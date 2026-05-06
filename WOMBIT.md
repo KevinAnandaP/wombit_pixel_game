@@ -1,1 +1,1 @@
-Wombit adalah projek wibawa yang kebanyakan isinya anak DKV
+Wombit adalah projek wibawa yang kebanyakan isinya anak DKV dan sedikit anak Informatika
