@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://b05ae8d8jogr4"]
+
+[ext_resource type="Texture2D" uid="uid://dyb7et0u6lrcr" path="res://assets/ui/dialog_panel.png" id="1_trjmt"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_su53f"]
+texture = ExtResource("1_trjmt")
+
+[node name="Panel" type="Panel" unique_id=778639226]
+offset_right = 170.0
+offset_bottom = 60.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_su53f")
