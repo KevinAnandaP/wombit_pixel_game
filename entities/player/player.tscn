@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://drj5l6cuickqd"]
+
+[ext_resource type="Script" uid="uid://djvscxu6sbr8n" path="res://entities/player/player.gd" id="1_abrql"]
+[ext_resource type="Texture2D" uid="uid://6ceondexj1gq" path="res://assets/entities/player/wombit_spritesheet.png" id="2_sglur"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bls4j"]
+atlas = ExtResource("2_sglur")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fkugw"]
+atlas = ExtResource("2_sglur")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8fjmc"]
+animations = [{
+"frames": [{
+"duration": 2.5,
+"texture": SubResource("AtlasTexture_bls4j")
+}, {
+"duration": 2.5,
+"texture": SubResource("AtlasTexture_fkugw")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_qiwj3"]
+radius = 6.0
+height = 14.0
+
+[node name="Player" type="CharacterBody2D" unique_id=1595887270]
+script = ExtResource("1_abrql")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1068538722]
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("SpriteFrames_8fjmc")
+autoplay = "default"
+frame_progress = 0.5942701
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=469327740]
+position = Vector2(1, 1)
+shape = SubResource("CapsuleShape2D_qiwj3")
