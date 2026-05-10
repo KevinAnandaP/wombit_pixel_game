@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://6ceondexj1gq"
-path="res://.godot/imported/wombit_spritesheet.png-fa7a73adff750b7cdc583189c375801e.ctex"
+uid="uid://cohmy2geu4kye"
+path="res://.godot/imported/wombit_charge-up.png-7216736a95e230f17faf2b6b88e63c30.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/entities/player/wombit_spritesheet.png"
-dest_files=["res://.godot/imported/wombit_spritesheet.png-fa7a73adff750b7cdc583189c375801e.ctex"]
+source_file="res://assets/entities/player/charge-up/wombit_charge-up.png"
+dest_files=["res://.godot/imported/wombit_charge-up.png-7216736a95e230f17faf2b6b88e63c30.ctex"]
 
 [params]
 
