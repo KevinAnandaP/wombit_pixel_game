@@ -30,3 +30,5 @@ script = ExtResource("2_os2uh")
 
 [node name="Dialogue" type="RichTextLabel" parent="." unique_id=2059569770]
 layout_mode = 2
+fit_content = true
+scroll_active = false
