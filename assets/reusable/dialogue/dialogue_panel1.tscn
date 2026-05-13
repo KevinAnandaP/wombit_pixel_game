@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://dsymg0kwppmpw"]
+
+[ext_resource type="Texture2D" uid="uid://bh46t2oljwpw4" path="res://assets/ui/Panel Dialog alt 1.png" id="1_v3gvl"]
+[ext_resource type="Script" uid="uid://43al03n2kg3h" path="res://assets/reusable/dialogue/dialogue_panel.gd" id="2_os2uh"]
+
+[sub_resource type="Theme" id="Theme_v3gvl"]
+RichTextLabel/colors/default_color = Color(0, 0, 0, 1)
+RichTextLabel/font_sizes/bold_font_size = 6
+RichTextLabel/font_sizes/bold_italics_font_size = 6
+RichTextLabel/font_sizes/italics_font_size = 6
+RichTextLabel/font_sizes/mono_font_size = 6
+RichTextLabel/font_sizes/normal_font_size = 6
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0ndxa"]
+content_margin_left = 4.0
+content_margin_top = 7.0
+content_margin_right = 6.0
+content_margin_bottom = 10.0
+texture = ExtResource("1_v3gvl")
+texture_margin_left = 5.0
+texture_margin_top = 10.0
+texture_margin_right = 5.0
+texture_margin_bottom = 10.0
+
+[node name="DialoguePanel" type="PanelContainer" unique_id=805708044]
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_top = -40.0
+offset_right = 86.0
+grow_horizontal = 2
+grow_vertical = 0
+theme = SubResource("Theme_v3gvl")
+theme_override_styles/panel = SubResource("StyleBoxTexture_0ndxa")
+script = ExtResource("2_os2uh")
+
+[node name="Dialogue" type="RichTextLabel" parent="." unique_id=2059569770]
+layout_mode = 2
+fit_content = true
+scroll_active = false
