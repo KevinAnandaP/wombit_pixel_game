@@ -1,6 +1,5 @@
 extends CharacterBody2D
 
-
 const SPEED = 400.0
 const JUMP_VELOCITY = -600.0
 const DASH_SPEED = 600.0
@@ -17,44 +16,62 @@ var is_landing = false
 var was_on_floor = true
 var can_dash = true
 
+# <--- add bool var
+var can_move: bool = true 
+
 @onready var anim = $AnimatedSprite2D
 
 func _physics_process(delta: float) -> void:
 	was_on_floor = is_on_floor()
-	# Add the gravity.
+	
+	# Add the gravity (Gravitasi tetap bekerja meskipun can_move = false).
 	if not is_on_floor() and not is_dashing:
 		velocity += get_gravity() * delta
 		is_landing = false
 	else:
-		# A. While holding the button down, build up the charge
-		if Input.is_action_pressed("ui_up") and not is_dashing:
-			velocity.x = 0
-			is_charging = true
-			
-			anim.position.x = randf_range(1, 2)
+		# <--- add: check can_move
+		if can_move: 
+			# A. While holding the button down, build up the charge
+			if Input.is_action_pressed("ui_up") and not is_dashing:
+				velocity.x = 0
+				is_charging = true
+				
+				anim.position.x = randf_range(1, 2)
 
-			charge_time += delta
-			# Clamp prevents the charge from going higher than the max
-			charge_time = clamp(charge_time, 0.0, MAX_CHARGE_TIME)
+				charge_time += delta
+				# Clamp prevents the charge from going higher than the max
+				charge_time = clamp(charge_time, 0.0, MAX_CHARGE_TIME)
 
-		# B. When the button is released, execute the jump
-		elif Input.is_action_just_released("ui_up") and not is_dashing:
-			perform_charged_jump()
-			anim.position.x = 0
-			is_charging = false
+			# B. When the button is released, execute the jump
+			elif Input.is_action_just_released("ui_up") and not is_dashing:
+				perform_charged_jump()
+				anim.position.x = 0
+				is_charging = false
+		else:
+			# <--- add: if dialog appear when player is charging up, cancel the charge
+			if is_charging:
+				is_charging = false
+				charge_time = 0.0
+				anim.position.x = 0
 		
 	# Dash
-	if Input.is_action_just_pressed("dash") and not is_dashing and not is_charging and can_dash:
+	# <--- add: check can_move
+	if can_move and Input.is_action_just_pressed("dash") and not is_dashing and not is_charging and can_dash:
 		perform_dash()
 		
 
 	# Get the input direction and handle the movement/deceleration.
-	# As good practice, you should replace UI actions with custom gameplay actions.
-	var direction := Input.get_axis("ui_left", "ui_right")
+	var direction := 0.0
+	
+	# <--- add: only accept player's move when allowed
+	if can_move:
+		direction = Input.get_axis("ui_left", "ui_right")
+
 	if not is_dashing and not is_charging:
 		if direction:
 			velocity.x = direction * SPEED
 		else:
+			# Ini akan otomatis menghentikan player secara perlahan saat can_move = false (karena direction = 0)
 			velocity.x = move_toward(velocity.x, 0, SPEED)
 		
 
@@ -126,4 +143,4 @@ func update_animations(direction):
 		elif velocity.x != 0:
 			anim.play("walk")
 		else:
-			anim.play("idle")	
+			anim.play("idle")

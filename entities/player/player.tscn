@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://y8acxqiyudei"]
 
-[ext_resource type="Script" path="res://entities/player/player.gd" id="1_abrql"]
+[ext_resource type="Script" uid="uid://djvscxu6sbr8n" path="res://entities/player/player.gd" id="1_abrql"]
 [ext_resource type="Texture2D" uid="uid://cohmy2geu4kye" path="res://assets/entities/player/charge-up/wombit_charge-up.png" id="2_7thud"]
 [ext_resource type="Texture2D" uid="uid://b38si3p4p358s" path="res://assets/entities/player/dash/wombit_dash 1.png" id="3_a1qjk"]
 [ext_resource type="Texture2D" uid="uid://bql04akw1pvsd" path="res://assets/entities/player/dash/wombit_dash 2.png" id="4_j3ovn"]
