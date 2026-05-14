@@ -12,7 +12,8 @@
 [ext_resource type="Texture2D" uid="uid://04teds70tnoi" path="res://assets/entities/player/jump/wombit_jump 3.png" id="9_3wlsy"]
 [ext_resource type="Texture2D" uid="uid://bvybhx5fqkxjr" path="res://assets/entities/player/walk/wombit_walk.png" id="10_b2kln"]
 [ext_resource type="Texture2D" uid="uid://43wq6n4dt56r" path="res://assets/entities/player/walk/wombit_walk 2.png" id="11_we0b7"]
-[ext_resource type="PackedScene" uid="uid://dsymg0kwppmpw" path="res://assets/reusable/dialogue/dialogue_panel1.tscn" id="13_j3ovn"]
+[ext_resource type="Texture2D" uid="uid://cx0jk4u51frwx" path="res://assets/ui/Panel Dialog alt united.png" id="13_afbqv"]
+[ext_resource type="FontFile" uid="uid://7hknldegi0de" path="res://assets/font/BoldsPixels.ttf" id="14_gx6sm"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_qiwj3"]
 radius = 6.0
@@ -102,8 +103,34 @@ sprite_frames = SubResource("SpriteFrames_8fjmc")
 animation = &"idle"
 autoplay = "idle"
 
-[node name="DialoguePanel" parent="." unique_id=805708044 instance=ExtResource("13_j3ovn")]
-offset_left = -53.0
-offset_top = -44.0
-offset_right = 53.0
-offset_bottom = -4.0
+[node name="NinePatchRect" type="NinePatchRect" parent="." unique_id=1761043361]
+anchors_preset = -1
+offset_left = -8.0
+offset_top = -41.0
+offset_right = 141.0
+offset_bottom = 27.0
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("13_afbqv")
+patch_margin_left = 20
+patch_margin_top = 20
+patch_margin_right = 20
+patch_margin_bottom = 20
+
+[node name="Label" type="Label" parent="NinePatchRect" unique_id=19173991]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 4.0
+offset_top = 6.0
+offset_right = -5.0
+offset_bottom = -10.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("14_gx6sm")
+theme_override_font_sizes/font_size = 8
+autowrap_mode = 3
+clip_text = true

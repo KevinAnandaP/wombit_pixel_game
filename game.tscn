@@ -132,5 +132,5 @@ position_smoothing_enabled = true
 position_smoothing_speed = 10.0
 
 [node name="NPC" parent="." unique_id=1211132873 instance=ExtResource("4_fc0e3")]
-position = Vector2(281.2, 175)
+position = Vector2(280, 176)
 scale = Vector2(0.9999998, 0.9999998)

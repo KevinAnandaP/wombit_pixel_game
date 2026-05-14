@@ -10,9 +10,13 @@ config_version=5
 
 [application]
 
-config/name="New Game Project"
+config/name="Wombit"
 run/main_scene="uid://jpdtmlvevlj4"
 config/features=PackedStringArray("4.6", "Forward Plus")
+
+[gui]
+
+theme/default_font_subpixel_positioning=0
 
 [input]
 
@@ -53,3 +57,4 @@ dash={
 
 textures/canvas_textures/default_texture_filter=0
 rendering_device/driver.windows="d3d12"
+2d/snap/snap_2d_transforms_to_pixel=true

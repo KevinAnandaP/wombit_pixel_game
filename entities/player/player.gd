@@ -21,6 +21,21 @@ var can_move: bool = true
 
 @onready var anim = $AnimatedSprite2D
 
+# Tarik node UI dari panel scene Player
+@onready var dialog_panel = $NinePatchRect
+@onready var dialog_label = $NinePatchRect/Label
+
+func _ready() -> void:
+   # Sembunyikan balon obrolan player saat game baru mulai
+	dialog_panel.hide()
+
+# Fungsi baru agar Player bisa memunculkan dialognya sendiri
+func speak(text_to_say: String, duration: float):
+	dialog_panel.show()
+	dialog_label.text = text_to_say
+	await get_tree().create_timer(duration).timeout
+	dialog_panel.hide()
+
 func _physics_process(delta: float) -> void:
 	was_on_floor = is_on_floor()
 	

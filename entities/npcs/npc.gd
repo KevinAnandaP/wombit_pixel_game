@@ -28,22 +28,21 @@ func start_conversation(player_node):
 	# 1. Bekukan pergerakan player
 	player_node.can_move = false
 	
-	# 2. Munculkan panel dan teks NPC secara random
+	# 2. Munculkan balon obrolan NPC
 	dialog_panel.show()
-	# pick_random() akan memilih salah satu teks dari array secara acak
-	dialog_label.text = "NPC:\n" + guide_dialogs.pick_random()
+	dialog_label.text = guide_dialogs.pick_random()
 	
-	# 3. Tunggu 3 detik (biarkan player membaca)
+	# 3. Tunggu 3 detik 
 	await get_tree().create_timer(3.0).timeout
 	
-	# 4. Ganti teks dengan balasan Player
-	dialog_label.text = "Player:\nOke, siap laksanakan!"
-	
-	# 5. Tunggu 2 detik lagi
-	await get_tree().create_timer(2.0).timeout
-	
-	# 6. Percakapan selesai, tutup panel dan lepaskan player
+	# 4. Tutup balon obrolan NPC
 	dialog_panel.hide()
+	
+	# 5. Minta Player untuk bicara pakai balon obrolannya sendiri!
+	# Menggunakan fungsi speak() yang baru saja kita buat di script Player
+	await player_node.speak("Oke, siap laksanakan!", 2.0)
+	
+	# 6. Percakapan selesai, lepaskan player
 	player_node.can_move = true
 	
 	# Cooldown agar dialog tidak langsung muncul lagi secara instan
