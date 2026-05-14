@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cg6k5x7myff4b"
-path="res://.godot/imported/test_panel.png-e99be4e7c0f2f19d996474682a5df207.ctex"
+uid="uid://ch2wihohy47v"
+path="res://.godot/imported/Timeline1_0004.png-5741ab5d032081e4c19ab68fa2acb205.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/ui/test_panel.png"
-dest_files=["res://.godot/imported/test_panel.png-e99be4e7c0f2f19d996474682a5df207.ctex"]
+source_file="res://assets/reusable/holypoop/Timeline1_0004.png"
+dest_files=["res://.godot/imported/Timeline1_0004.png-5741ab5d032081e4c19ab68fa2acb205.ctex"]
 
 [params]
 
