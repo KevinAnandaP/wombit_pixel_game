@@ -1,0 +1,119 @@
+[gd_scene format=3 uid="uid://gswusxud642c"]
+
+[ext_resource type="Script" uid="uid://dvp77ha7tvcog" path="res://assets/reusable/holypoop/holypoop.gd" id="1_7866n"]
+[ext_resource type="Texture2D" uid="uid://cqe4khq7jytrc" path="res://assets/reusable/holypoop/Timeline1_0000.png" id="1_x1vxf"]
+[ext_resource type="Texture2D" uid="uid://b1mb4gjxmsanm" path="res://assets/reusable/holypoop/Timeline1_0001.png" id="2_7866n"]
+[ext_resource type="Texture2D" uid="uid://qh8ciox272x7" path="res://assets/reusable/holypoop/Timeline1_0002.png" id="3_god3d"]
+[ext_resource type="Texture2D" uid="uid://bq34vvw2hge8l" path="res://assets/reusable/holypoop/Timeline1_0003.png" id="4_g3ydg"]
+[ext_resource type="Texture2D" uid="uid://ch2wihohy47v" path="res://assets/reusable/holypoop/Timeline1_0004.png" id="5_s2p5v"]
+[ext_resource type="Texture2D" uid="uid://p786vy75yq7a" path="res://assets/reusable/holypoop/Timeline1_0005.png" id="6_taj26"]
+[ext_resource type="Texture2D" uid="uid://dk0apmlpqtdjd" path="res://assets/reusable/holypoop/Timeline1_0006.png" id="7_7371l"]
+[ext_resource type="Texture2D" uid="uid://ccrhy3gembyy8" path="res://assets/reusable/holypoop/Timeline1_0007.png" id="8_f85d3"]
+[ext_resource type="Texture2D" uid="uid://c87sahjhslvj7" path="res://assets/reusable/holypoop/Timeline1_0008.png" id="9_tn6jo"]
+[ext_resource type="Texture2D" uid="uid://cqqnktofgdulh" path="res://assets/reusable/holypoop/Timeline1_0009.png" id="10_53flt"]
+[ext_resource type="Texture2D" uid="uid://bishqgdeu8cs" path="res://assets/reusable/holypoop/Timeline1_0010.png" id="11_d1cup"]
+[ext_resource type="Texture2D" uid="uid://111ncxbexgg4" path="res://assets/reusable/holypoop/Timeline1_0011.png" id="12_f3xcc"]
+[ext_resource type="Texture2D" uid="uid://dbyax81btc4hp" path="res://assets/reusable/holypoop/Timeline1_0012.png" id="13_nqsxe"]
+[ext_resource type="Texture2D" uid="uid://dnalierek8ciq" path="res://assets/reusable/holypoop/Timeline1_0013.png" id="14_g3nlw"]
+[ext_resource type="Texture2D" uid="uid://dt3jeu30u3dxb" path="res://assets/reusable/holypoop/Timeline1_0014.png" id="15_whcpb"]
+[ext_resource type="Texture2D" uid="uid://xert3m3r4xps" path="res://assets/reusable/holypoop/Timeline1_0015.png" id="16_4ds14"]
+[ext_resource type="Texture2D" uid="uid://bjr1or2ih1uww" path="res://assets/reusable/holypoop/Timeline1_0016.png" id="17_sbj6u"]
+[ext_resource type="Texture2D" uid="uid://bxesrktop37a" path="res://assets/reusable/holypoop/Timeline1_0017.png" id="18_76std"]
+[ext_resource type="Texture2D" uid="uid://c0jknbgh8a1im" path="res://assets/reusable/holypoop/Timeline1_0018.png" id="19_i872j"]
+[ext_resource type="Texture2D" uid="uid://ccbsx48ujhsry" path="res://assets/reusable/holypoop/Timeline1_0019.png" id="20_2nytt"]
+[ext_resource type="Texture2D" uid="uid://bnq1qe31khy0h" path="res://assets/reusable/holypoop/Timeline1_0020.png" id="21_3vgsl"]
+[ext_resource type="Texture2D" uid="uid://udt6kg6wxpg8" path="res://assets/reusable/holypoop/Timeline1_0021.png" id="22_muqvh"]
+[ext_resource type="Texture2D" uid="uid://j37su0qvbgva" path="res://assets/reusable/holypoop/Timeline1_0022.png" id="23_72wkg"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ch84f"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_x1vxf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_7866n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_god3d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_g3ydg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_s2p5v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_taj26")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_7371l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_f85d3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_tn6jo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_53flt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_d1cup")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_f3xcc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_nqsxe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_g3nlw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_whcpb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_4ds14")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_sbj6u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_76std")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_i872j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_2nytt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_3vgsl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_muqvh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_72wkg")
+}],
+"loop": true,
+"name": &"default",
+"speed": 11.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rd5dn"]
+size = Vector2(25, 22)
+
+[node name="holypoop" type="Area2D" unique_id=2100975055]
+script = ExtResource("1_7866n")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1613977139]
+sprite_frames = SubResource("SpriteFrames_ch84f")
+autoplay = "default"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=198688653]
+position = Vector2(1, -1)
+shape = SubResource("RectangleShape2D_rd5dn")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

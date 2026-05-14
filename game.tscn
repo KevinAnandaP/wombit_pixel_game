@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://d0fa6dbix8nxv" path="res://assets/backgrounds/bg_wombit_2.png" id="1_feb5d"]
 [ext_resource type="Texture2D" uid="uid://cxjhbj2vhrnou" path="res://assets/tileset/tileset.png" id="2_e2o6t"]
 [ext_resource type="PackedScene" uid="uid://drkdehjnhadcp" path="res://entities/npcs/npc_1.tscn" id="4_fc0e3"]
+[ext_resource type="PackedScene" uid="uid://gswusxud642c" path="res://assets/reusable/holypoop/holypoop.tscn" id="5_7jktm"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_feb5d"]
 texture = ExtResource("2_e2o6t")
@@ -134,3 +135,9 @@ position_smoothing_speed = 10.0
 [node name="NPC" parent="." unique_id=1211132873 instance=ExtResource("4_fc0e3")]
 position = Vector2(280, 176)
 scale = Vector2(0.9999998, 0.9999998)
+
+[node name="holypoop" parent="." unique_id=2100975055 instance=ExtResource("5_7jktm")]
+position = Vector2(488, 78.399994)
+
+[node name="holypoop2" parent="." unique_id=660344305 instance=ExtResource("5_7jktm")]
+position = Vector2(736.8, 114.399994)
