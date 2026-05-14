@@ -1,3 +1,66 @@
 [gd_scene format=3 uid="uid://drkdehjnhadcp"]
 
-[node name="npc1" type="CharacterBody2D" unique_id=113543636]
+[ext_resource type="Script" uid="uid://ca64y1er8k2mq" path="res://entities/npcs/npc.gd" id="1_34v68"]
+[ext_resource type="Texture2D" uid="uid://csmolcxj3j3qv" path="res://assets/entities/npcs/npc_idle.png" id="1_trtki"]
+[ext_resource type="Texture2D" uid="uid://fmedtl7ewkwn" path="res://assets/entities/npcs/npc_idle_2.png" id="2_f4uds"]
+[ext_resource type="Texture2D" uid="uid://cx0jk4u51frwx" path="res://assets/ui/Panel Dialog alt united.png" id="3_n8n0e"]
+[ext_resource type="FontFile" uid="uid://7hknldegi0de" path="res://assets/font/BoldsPixels.ttf" id="4_34v68"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_n8n0e"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_trtki")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_f4uds")
+}],
+"loop": true,
+"name": &"default",
+"speed": 2.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_34v68"]
+size = Vector2(32, 32)
+
+[node name="NPC" type="Area2D" unique_id=1211132873]
+script = ExtResource("1_34v68")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1081943270]
+sprite_frames = SubResource("SpriteFrames_n8n0e")
+autoplay = "default"
+
+[node name="NinePatchRect" type="NinePatchRect" parent="." unique_id=867973304]
+anchors_preset = -1
+offset_left = -22.0
+offset_top = -84.0
+offset_right = 127.0
+offset_bottom = -16.0
+texture = ExtResource("3_n8n0e")
+patch_margin_left = 20
+patch_margin_top = 20
+patch_margin_right = 20
+patch_margin_bottom = 20
+
+[node name="Label" type="Label" parent="NinePatchRect" unique_id=1973214663]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 4.0
+offset_top = 7.0
+offset_right = -5.0
+offset_bottom = -10.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_34v68")
+theme_override_font_sizes/font_size = 8
+autowrap_mode = 3
+clip_text = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=686215084]
+shape = SubResource("RectangleShape2D_34v68")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
