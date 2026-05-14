@@ -18,6 +18,8 @@ var can_dash = true
 
 # <--- add bool var
 var can_move: bool = true 
+var poop_count: int = 0
+@onready var score_label = $CanvasLayer/Label # Pastikan path-nya sesuai dengan susunan node-mu
 
 @onready var anim = $AnimatedSprite2D
 
@@ -159,3 +161,6 @@ func update_animations(direction):
 			anim.play("walk")
 		else:
 			anim.play("idle")
+func add_poop():
+	poop_count += 1
+	score_label.text = "Holy Poop: " + str(poop_count)
