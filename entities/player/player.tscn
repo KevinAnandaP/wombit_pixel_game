@@ -139,10 +139,10 @@ clip_text = true
 
 [node name="Label" type="Label" parent="CanvasLayer" unique_id=665471799]
 offset_left = 45.0
-offset_top = 162.0
-offset_right = 146.0
-offset_bottom = 185.0
+offset_top = 66.0
+offset_right = 246.0
+offset_bottom = 111.0
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 2
-theme_override_font_sizes/font_size = 16
+theme_override_font_sizes/font_size = 32
 text = "Holy Poop : 0"
