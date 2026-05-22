@@ -141,3 +141,45 @@ position = Vector2(488, 78.399994)
 
 [node name="holypoop2" parent="." unique_id=660344305 instance=ExtResource("5_7jktm")]
 position = Vector2(736.8, 114.399994)
+
+[node name="holypoop3" parent="." unique_id=1847274594 instance=ExtResource("5_7jktm")]
+position = Vector2(846, -17.199997)
+
+[node name="holypoop4" parent="." unique_id=420324866 instance=ExtResource("5_7jktm")]
+position = Vector2(1089.6, -88.8)
+
+[node name="holypoop5" parent="." unique_id=869054323 instance=ExtResource("5_7jktm")]
+position = Vector2(1246.3999, -47.600006)
+
+[node name="holypoop6" parent="." unique_id=729579673 instance=ExtResource("5_7jktm")]
+position = Vector2(1377.2, 11.599995)
+
+[node name="holypoop7" parent="." unique_id=1059815357 instance=ExtResource("5_7jktm")]
+position = Vector2(1621.6, -48.399994)
+
+[node name="holypoop8" parent="." unique_id=962441768 instance=ExtResource("5_7jktm")]
+position = Vector2(1651.6, -48.4)
+
+[node name="holypoop9" parent="." unique_id=709534203 instance=ExtResource("5_7jktm")]
+position = Vector2(1682, -49.2)
+
+[node name="holypoop10" parent="." unique_id=604927741 instance=ExtResource("5_7jktm")]
+position = Vector2(1813.6, -18.800003)
+
+[node name="holypoop11" parent="." unique_id=735056104 instance=ExtResource("5_7jktm")]
+position = Vector2(2226.4, 145.19998)
+
+[node name="holypoop12" parent="." unique_id=1162253216 instance=ExtResource("5_7jktm")]
+position = Vector2(2256.7998, 144.8)
+
+[node name="holypoop13" parent="." unique_id=18151301 instance=ExtResource("5_7jktm")]
+position = Vector2(2227.6, 172.4)
+
+[node name="holypoop14" parent="." unique_id=1680326356 instance=ExtResource("5_7jktm")]
+position = Vector2(2258, 171.59999)
+
+[node name="holypoop15" parent="." unique_id=832940875 instance=ExtResource("5_7jktm")]
+position = Vector2(2349.6, 176)
+
+[node name="holypoop16" parent="." unique_id=1214934067 instance=ExtResource("5_7jktm")]
+position = Vector2(2384.8, 176.4)
